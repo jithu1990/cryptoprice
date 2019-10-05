@@ -77,7 +77,7 @@ def get_price(intent, session):
     fiat_currency_name_to_symbol = {'dollars': 'usd', 'euros': 'eur', 'eur': 'eur', 'pounds': 'gbp', 'pounds stirling': 'gbp', 'gbp': 'gbp', 'US dollars': 'usd', 'usd': 'usd'}
     cryptocurrency_name_to_symbol = {'bitcoin': 'btc', 'btc': 'btc', 'ethereum': 'eth', 'ether': 'eth', 'eth': 'eth', 'litecoin': 'ltc', 'ltc': 'ltc'}
                                     
-    fiat_currency_symbol_to_name = {'usd': 'dollars', 'eur': 'euros', 'gbp': 'pounds'}
+    fiat_currency_symbol_to_name = {'usd': 'dollars', 'eur': 'euros', 'gbp': 'pounds','inr':'rupees'}
     cryptocurrency_symbol_to_name = {'btc': 'bitcoin', 'eth': 'ether', 'ltc': 'litecoin'}
     
     if 'value' in intent['slots']['cryptocurrency']:
